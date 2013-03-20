@@ -1,0 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end css reset */
+
+/* Use -webkit-text-size-adjust:none to disable text size adjust on the iPhone */
+html {
+	-webkit-text-size-adjust: none;
+}
+/* image auto resize */
+img.autoresize {
+	width: 100%;
+	max-width: 968px;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+img.thumbresize {
+	width: 160px;
+}
+
+/* generic tags  */
+body {
+	margin: 5px;
+	background: #fff none;
+}
+
+h1 {
+	font-size: 24px;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #3b7c33; /* Fallback */
+	/* Safari 4+, Chrome 1-9 */
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#5fae53), to(#3b7c33));
+	/* Safari 5.1+, Mobile Safari, Chrome 10+ */
+	background-image: -webkit-linear-gradient(top, #5fae53, #3b7c33); 
+	/* Firefox 3.6+ */
+	background-image: -moz-linear-gradient(top, #5fae53, #3b7c33);
+	/* IE 10+ */
+	background-image: -ms-linear-gradient(top, #5fae53, #3b7c33);
+	/* Opera 11.10+ */
+	background-image: -o-linear-gradient(top, #5fae53, #3b7c33);
+	border: 4px solid #336c2b;
+}
+
+h2 {
+	margin: 5px 0px;
+	font-size: 16px;
+	width: 100%;
+	text-align: center;
+	padding: 10px 0px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #5fae53;
+	border: 4px solid #336c2b;
+}
+
+
+/* VIEWPORT < 960px */
+@media only screen and (max-width: 960px){
+	header, nav, footer, #container { width: 768px; }
+}
+
+
+/* VIEWPORT < 768px */
+@media only screen and (max-width: 768px){
+	header, nav, footer, #container { width: 524px; }
+	img.autoresize {
+		width: 100%;
+		max-width: 100%;
+	}
+	img.thumbresize {
+		width: 80px;
+	}
+}
+
+/* VIEWPORT < 524px */
+@media only screen and (max-width: 524px){
+	header, nav, footer, #container { width: 300px; }
+}
+
+
