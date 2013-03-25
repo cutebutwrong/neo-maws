@@ -8,13 +8,21 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Responsive Game Layout</title>
 	<!-- open graph -->
-	<meta property="og:title" content="" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta property="fb:app_id" content="" />
+	<meta property="og:title" content="$title$" />
+	<meta property="og:image" content="$image$" />
+	<meta property="og:url" content="$pageurl$" />
+	<meta property="og:description" content="$title$" />
+    <meta property="og:type" content="game" />
+    <meta property="og:site_name" content="MAWS" />
+	<!-- <meta property="fb:app_id" content="" /> -->
+    <!-- standard meta -->
+    <meta name="description" content="$title$" />
+    <meta name="keywords" content="$keywords$" />
+    <meta name="generator" content="MAWS" />
+    <link rel="image_src" href="$image$" />
+    <!-- robots -->
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
 	<!-- Javascript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 	<!-- display -->
@@ -35,20 +43,25 @@
 
 <body id="game-parent">
 
-<div id="container">
-
-<h1>R-Type (World)</h1>
-<p>&copy; [year] [manufacturer]</p>
+<div id="container" itemscope itemtype="http://schema.org/SoftwareApplication">
+<!-- http://schema.org/SoftwareApplication -->
+<h1 itemprop="name">R-Type (World)</h1>
+<p>
+    &copy; <span itemprop="copyrightYear">[year]</span> 
+    <span itemprop="copyrightHolder">[manufacturer]</span>
+</p>
+<meta itemprop="applicationCategory" content="Game" />
+<meta itemprop="applicationSubCategory" content="Arcade Game" />
 <div>
-<div class="thumbs">
-<img class="thumbresize" src="img/ps/snap/rtype_0000.png" />
-<img class="thumbresize" src="img/ps/snap/rtype_0001.png" />
-<img class="thumbresize" src="img/ps/snap/rtype_0002.png" />
-<img class="thumbresize" src="img/ps/title/rtype_0000.png" />
-<img class="thumbresize" src="img/ps/gameover/rtype_0000.png" />
-<img class="thumbresize" src="img/ps/flyer/rtype_0000.png" />
-</div>
-<img id="displaysnap" class="autoresize" src="img/ps/snap/rtype_0000.png" />
+    <div class="thumbs">
+        <img class="thumbresize" src="img/ps/snap/rtype_0000.png" />
+        <img class="thumbresize" src="img/ps/snap/rtype_0001.png" />
+        <img class="thumbresize" src="img/ps/snap/rtype_0002.png" />
+        <img class="thumbresize" src="img/ps/title/rtype_0000.png" />
+        <img class="thumbresize" src="img/ps/gameover/rtype_0000.png" />
+        <img class="thumbresize" src="img/ps/flyer/rtype_0000.png" />
+    </div>
+<img id="displaysnap" class="autoresize" src="img/ps/snap/rtype_0000.png" itemprop="image" />
 </div>
 
 <h2>Display</h2>
